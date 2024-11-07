@@ -1,101 +1,94 @@
-Blackjack Game (21) in C
+# Blackjack Game (21) in C
 
-FInal Challenge (C Programming)
+Final Challenge (C Programming)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Table of Contents
 
-Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Usage Information](#usage-information)
+- [Suggested Future Development](#suggested-future-development)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Test Instructions](#test-instructions)
+- [License](#license)
+- [Questions](#questions)
 
-Description
-Installation
-Technologies Used
-Features
-Usage Information
-Suggested Future Development
-Contribution Guidelines
-Test Instructions
-License
-Questions
-Description
+## Description
 
-This application is a simple text based Blackjack game built using the C programming language. The game allows the player to play against a dealer in a standard 21 game, where the goal is to have a higher hand value than the dealer without exceeding 21.
+This is a simple text-based Blackjack (21) game developed in C. The game simulates the popular card game where players attempt to achieve a hand value closest to 21 without exceeding it, competing against a dealer. The game includes the following features:
 
-The game tracks player statistics such as total chips, wins, losses, ties, and total games played, which are saved using an SQLite database. Players can also view their win/loss ratio after each session.
+- **Card Drawing**: Both player and dealer draw cards, with face cards (Jack, Queen, King) worth 10 points and Ace worth either 1 or 11.
+- **Betting System**: Players place a bet using their available chips before each round.
+- **Statistics**: Player stats, including wins, losses, ties, and total chips, are saved in an SQLite database.
+- **Win/Loss Analysis**: View your win/loss/tie ratios after each game session.
+- **Persistent Player State**: Saves and loads player data (chips, games played, wins, losses, ties) between sessions.
 
-The game is designed to be played in the terminal, and the player can choose to "hit" (draw a card) or "stand" (end their turn). A series of rules for busting (going over 21) and winning conditions are implemented for both the player and the dealer.
+This game was created to practice basic C programming skills, including handling user input, implementing game logic, and working with databases.
 
-Installation
+## Installation
 
 To run this game locally, follow the steps below:
 
-Clone the repository from GitHub.
-Install SQLite on your machine if it’s not already installed. For installation instructions, visit the SQLite download page.
-Use a C compiler (such as GCC) to compile the program:
-gcc -o blackjack blackjack.c -lsqlite3
-Run the compiled game:
-./blackjack
-This will launch the game and display your current chip count.
+1. **Clone the repository**:
 
-Technologies Used
+    ```bash
+    git clone https://github.com/your-username/blackjack-game.git
+    cd blackjack-game
+    ```
 
-This application is built using the following technologies:
+2. **Install SQLite**:
+   Ensure that SQLite is installed on your machine. You can download it from the official website: [SQLite Download](https://www.sqlite.org/download.html).
 
-C Programming Language (v11.2.0)
-SQLite for database management
-GCC (GNU Compiler Collection) for compiling the C code
-Standard C libraries (stdio.h, stdlib.h, time.h, sqlite3.h)
-Features
+3. **Compile the code**:
 
-Key features of the Blackjack game:
+    Use the following command to compile the program:
 
-Game Mechanics: Standard Blackjack game rules (player vs. dealer).
-Database Integration: Tracks game results, player statistics, and progress in an SQLite database.
-Player Actions: The player can "hit" (draw a card) or "stand" (end their turn).
-Win/Loss/Tie Statistics: View your win/loss/tie ratio after each game.
-Persistent State: Player's chip count and game statistics are saved and loaded between sessions.
-Usage Information
+    ```bash
+    gcc -o blackjack blackjack.c -lsqlite3
+    ```
 
-This game is intended to be played through the terminal. Once launched, you will be prompted to place a bet. After each round, you can choose to play again if you have enough chips. If you run out of chips, the game ends.
+4. **Run the game**:
 
-Start the Game: On launch, the game will load your saved state (if available) from the database.
-Place Your Bet: Enter the number of chips you want to bet (must be between 1 and your current chip count).
-Player Turn: You will be given two cards, and you can choose to "hit" or "stand".
-Dealer Turn: After your turn, the dealer will automatically play according to Blackjack rules (hits until they have at least 17).
-Result: After each round, the game will display whether you won, lost, or tied, and your chip count will be updated.
-Statistics: At any time, you can see your win/loss/tie ratio.
-Suggested Future Development
+    Launch the game by running the compiled program:
 
-Possible improvements and additions for future versions:
+    ```bash
+    ./blackjack
+    ```
 
-Graphical User Interface (GUI): Transition from the terminal interface to a GUI-based system using a library like GTK or SDL.
-Multiplayer Support: Allow multiple players to play against each other or against a computer-controlled dealer.
-Bet Limits: Introduce betting limits or special chips for advanced gameplay.
-More Detailed Stats: Track additional statistics like average hand value, biggest win/loss, etc.
-Sound Effects/Animations: Add sound effects or ASCII art animations to enhance the gameplay experience.
-Contribution Guidelines
+    This will start the game in your terminal. You will be prompted to place bets and play against the dealer.
 
-Contributions are welcome! To contribute:
+## Technologies Used
 
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Make your changes and test thoroughly.
-Submit a pull request explaining the changes you made.
-Please ensure that your code adheres to the existing coding style and passes any tests before submitting your pull request.
+This project utilizes the following technologies:
 
-Test Instructions
+- **C Programming Language** (v11.2.0)
+- **SQLite** for database management (v3.36)
+- **GCC** (GNU Compiler Collection) for compiling C code
 
-Currently, there are no unit tests written for this application. However, manual testing is essential to ensure the correct functionality of the game.
+## Features
 
-Test the flow of the game by placing different types of bets and playing multiple rounds.
-Ensure that your chip count updates correctly and that game results are saved to the database.
-License
+Key features of the Blackjack game include:
 
-This project is licensed under the MIT License. See the LICENSE file for more information.
+- **Single-player** gameplay against a computer-controlled dealer.
+- **Database Integration** to store player data (chips, wins, losses, ties).
+- **Betting System** allowing players to place bets each round.
+- **Real-time Feedback** after each round showing the outcome and updated stats.
+- **Win/Loss/Tie Analysis** showing the player’s win/loss ratio.
+- **Persistent Player State** saved and loaded between game sessions.
 
-Questions
+## Usage Information
 
-Have additional questions? Feel free to reach out to me via:
+This game is intended to be played via the terminal:
 
-GitHub donsidious
-Email: genzdegen@tuta.io
+1. **Start the Game**: After launching, the game will display your current chip count and ask you to place a bet.
+2. **Player's Turn**: You can choose to "hit" (draw a card) or "stand" (end your turn). The dealer automatically plays according to Blackjack rules (draws until reaching at least 17).
+3. **Game Outcome**: The result of each round (win, loss, or tie) will be shown, and your chip count will be updated.
+4. **View Statistics**: You can view your win/loss/tie ratios and total games played.
+5. **Save & Resume**: Player data is saved after each session, and the next time you launch the game, your stats will be automatically loaded.
+
+### Example Gameplay:
 
