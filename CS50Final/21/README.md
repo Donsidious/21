@@ -67,7 +67,7 @@ To run this game locally, follow the steps below:
     Use the following command to compile the program:
 
     ```bash
-    gcc -o blackjack blackjack.c -lsqlite3
+    gcc -o 21 21.c -lsqlite3
     ```
 
 4. **Run the game**:
@@ -75,7 +75,7 @@ To run this game locally, follow the steps below:
     Launch the game by running the compiled program:
 
     ```bash
-    ./blackjack
+    ./21
     ```
 
     This will start the game in your terminal. You will be prompted to place bets and play against the dealer.
