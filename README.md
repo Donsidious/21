@@ -38,7 +38,7 @@ Final Challenge (C Programming)
 
 ## Description
 
-This is a simple text-based Blackjack (21) game developed in C. The game simulates the popular card game where players attempt to achieve a hand value closest to 21 without exceeding it, competing against a dealer. The game includes the following features:
+This is a simple text based Blackjack (21) game developed in C. The game simulates the popular card game where players attempt to achieve a hand value closest to 21 without exceeding it, competing against a dealer. The game includes the following features:
 
 - **Card Drawing**: Both player and dealer draw cards, with face cards (Jack, Queen, King) worth 10 points and Ace worth either 1 or 11.
 - **Betting System**: Players place a bet using their available chips before each round.
