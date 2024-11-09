@@ -6,18 +6,35 @@ Final Challenge (C Programming)
 [![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
 
 ## Table of Contents
-
+-[Name]((#Name)
 - [Description](#description)
+- [Github and Edex](#github-and-edex)
+- [City and Country](#city-and-country)
+- [Date](#date)
 - [Installation](#installation)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Usage Information](#usage-information)
-- [Example Gameplay](#example-gameplay)
+- [Eample-Gameplay](#Example-Gameplay)
 - [Suggested Future Development](#suggested-future-development)
-- [Contribution Guidelines](#contribution-guidelines)
-- [Test Instructions](#test-instructions)
 - [License](#license)
 - [Questions](#questions)
+
+## Name
+
+- **Alfredo Salayandia**
+
+## Github and Edex
+
+-**Donsidious**
+
+## City and Country
+
+-**Brighton, USA**
+
+## Date
+
+-**2024**
 
 ## Description
 
@@ -92,5 +109,28 @@ This game is intended to be played via the terminal:
 4. **View Statistics**: You can view your win/loss/tie ratios and total games played.
 5. **Save & Resume**: Player data is saved after each session, and the next time you launch the game, your stats will be automatically loaded.
 
+
 ### Example Gameplay:
+
+### Suggested Future Development: 
+looking into creating alogrithms one is able to you and play around with.
+
+-** Fibonacci Sequence**: Implement a program that generates the Fibonacci sequence (1, 1, 2, 3, 5, 8, 13, 21, etc.). Other alogrithms might to be implemented in the future.
+
+-** allowing the process of payments to be made.**
+
+-** ading s btter terminal experience.**
+
+
+### License
+
+This project is licensed under the MIT License. For more information, see the [LICENSE](LICENSE) file.
+
+
+### Questions
+
+If you have any questions or suggestions, please contact me at [genzdegen@tuta.io](mailto:genzdegen@tuta.io).
+
+
+
 
