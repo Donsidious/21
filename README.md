@@ -26,15 +26,15 @@ Final Challenge (C Programming)
 
 ## Github and Edex
 
--**Donsidious**
+- **Donsidious**
 
 ## City and Country
 
--**Brighton, USA**
+- **Brighton, USA**
 
 ## Date
 
--**2024**
+- **2024**
 
 ## Description
 
