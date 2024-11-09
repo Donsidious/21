@@ -6,10 +6,10 @@ Final Challenge (C Programming)
 [![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
 
 ## Table of Contents
-- [Description](#description)
 - [Github and Edex](#github-and-edex)
 - [City and Country](#city-and-country)
 - [Date](#date)
+- [Description](#description)
 - [Installation](#installation)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
