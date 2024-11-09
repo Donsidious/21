@@ -6,11 +6,10 @@ Final Challenge (C Programming)
 [![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
 
 ## Table of Contents
--[Name]((#Name)
-- [Description](#description)
 - [Github and Edex](#github-and-edex)
 - [City and Country](#city-and-country)
 - [Date](#date)
+- [Description](#description)
 - [Installation](#installation)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
@@ -26,19 +25,19 @@ Final Challenge (C Programming)
 
 ## Github and Edex
 
--**Donsidious**
+- **Donsidious**
 
 ## City and Country
 
--**Brighton, USA**
+- **Brighton, USA**
 
 ## Date
 
--**2024**
+- **2024**
 
 ## Description
 
-This is a simple text-based Blackjack (21) game developed in C. The game simulates the popular card game where players attempt to achieve a hand value closest to 21 without exceeding it, competing against a dealer. The game includes the following features:
+This is a simple text based Blackjack (21) game developed in C. The game simulates the popular card game where players attempt to achieve a hand value closest to 21 without exceeding it, competing against a dealer. The game includes the following features:
 
 - **Card Drawing**: Both player and dealer draw cards, with face cards (Jack, Queen, King) worth 10 points and Ace worth either 1 or 11.
 - **Betting System**: Players place a bet using their available chips before each round.
@@ -55,8 +54,8 @@ To run this game locally, follow the steps below:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/your-username/blackjack-game.git
-    cd blackjack-game
+    git clone https://github.com/Donsidious/21
+    cd CS50Final
     ```
 
 2. **Install SQLite**:
@@ -115,9 +114,11 @@ This game is intended to be played via the terminal:
 ### Suggested Future Development: 
 looking into creating alogrithms one is able to you and play around with.
 
--** Fibonacci Sequence**: Implement a program that generates the Fibonacci sequence (1, 1, 2, 3, 5, 8, 13, 21, etc.). Other alogrithms might to be implemented in the future.
+1. **Fibonacci Sequence**: Implement a program that generates the Fibonacci sequence (1, 1, 2, 3, 5, 8, 13, 21, etc.). Other alogrithms might to be implemented in the future.
 
--** allowing the process of payments to be made.**
+2. **Terminal Interface**: Create a better terminal interface allowing the process of payments to be made.
+
+3. **Ading a better terminal experience**.
 
 
 ### License
@@ -132,3 +133,4 @@ If you have any questions or suggestions, please contact me at [genzdegen@tuta.i
 
 
 
+    
