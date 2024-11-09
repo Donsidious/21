@@ -115,11 +115,11 @@ This game is intended to be played via the terminal:
 ### Suggested Future Development: 
 looking into creating alogrithms one is able to you and play around with.
 
-1. **Fibonacci Sequence**: Implement a program that generates the Fibonacci sequence (1, 1, 2, 3, 5, 8, 13, 21, etc.). Other alogrithms might to be implemented in the future.**
+1. **Fibonacci Sequence**: Implement a program that generates the Fibonacci sequence (1, 1, 2, 3, 5, 8, 13, 21, etc.). Other alogrithms might to be implemented in the future.
 
 2. **Terminal Interface**: Create a better terminal interface allowing the process of payments to be made.*
 
-3. **Ading a better terminal experience.** 
+3. **Ading a better terminal experience**.
 
 
 ### License
