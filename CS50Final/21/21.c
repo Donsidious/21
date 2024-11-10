@@ -109,6 +109,8 @@ void analyzeWinLossRatio() {
     printf("Total Games Played: %d\n", totalGames);
 }
 
+
+// Starting db
 void initializeDatabase() {
     sqlite3 *db;
     char *errMsg = 0;
