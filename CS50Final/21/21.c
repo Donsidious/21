@@ -287,7 +287,7 @@ bool dealerTurn(int *dealerHand, int *numDealerCards) {
 // Update the player's chips based on the result of the game
 void updateChips(int result, int *chips, int bet) {
     if (result > 0) {
-        // Player wins, payout is 3:2, so multiply the bet by 1.5 (rounded down to nearest integer)
+        // Player wins, payout is 3:2.
         *chips += (int)(bet * 1.5);
     } else if (result < 0) {
         *chips -= bet;  // Player loses, subtract the bet amount
