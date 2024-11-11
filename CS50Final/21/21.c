@@ -80,7 +80,7 @@ void analyzeWinLossRatio() {
         fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
         return;
     }
-
+//
     const char *sql = "SELECT result, COUNT(*) FROM games GROUP BY result;";
     rc = sqlite3_prepare_v2(db, sql, -1, &stmt, 0);
     if (rc != SQLITE_OK) {
@@ -109,8 +109,6 @@ void analyzeWinLossRatio() {
     printf("Total Games Played: %d\n", totalGames);
 }
 
-
-// Starting db
 void initializeDatabase() {
     sqlite3 *db;
     char *errMsg = 0;
@@ -154,7 +152,7 @@ void storeGameResult(const char *result, int bet, int chipsWonLost, int starting
     sqlite3 *db;
     sqlite3_stmt *stmt;
 
-    int rc = sqlite3_open("21.db", &db);
+    int rc = sqlite3_open("21.db", &db);// Open the database
     if (rc) {
         fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
         return;
@@ -223,11 +221,11 @@ void playGame(int *chips) {
     // Decide the winner
     if (playerScore > dealerScore) {
         printf("You win this round!\n");
-        updateChips(bet, chips, bet);  // Player wins, so add bet to chips
-        storeGameResult("win", bet, bet, *chips - bet, *chips); // Store win
+        updateChips(bet, chips, bet);  // Player wins, add bet to chips
+        storeGameResult("win", bet, bet, *chips - bet, *chips); // Store's win
     } else if (playerScore < dealerScore) {
         printf("Dealer wins this round.\n");
-        updateChips(-bet, chips, bet);  // Dealer wins, so subtract bet from chips
+        updateChips(-bet, chips, bet);  // Dealer wins, and we subtract bet from chips
         storeGameResult("loss", bet, -bet, *chips + bet, *chips); // Store loss
     } else {
         printf("It's a tie!\n");
@@ -286,13 +284,13 @@ bool dealerTurn(int *dealerHand, int *numDealerCards) {
     displayHand(dealerHand, *numDealerCards);
     return getHandValue(dealerHand, *numDealerCards) > 21; // Dealer busts
 }
-
 // Update the player's chips based on the result of the game
 void updateChips(int result, int *chips, int bet) {
     if (result > 0) {
-        *chips += bet;
+        // Player wins, payout is 3:2, so multiply the bet by 1.5 (rounded down to nearest integer)
+        *chips += (int)(bet * 1.5);
     } else if (result < 0) {
-        *chips -= bet;
+        *chips -= bet;  // Player loses, subtract the bet amount
     }
 }
 
