@@ -29,7 +29,7 @@ Final Challenge (C Programming)
 
 ## City and Country
 
-- **Brighton, USA**
+- **Denver, USA**
 
 ## Date
 
